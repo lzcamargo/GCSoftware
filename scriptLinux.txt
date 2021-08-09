@@ -1,0 +1,34 @@
+GIT HUB NO UBUNTU
+
+sudo apt-get install git-all
+
+CONFIGURACAO INICIAL DO GIT NO LINUX
+
+#-------Identidade
+git config --global user.name "lUIZ"
+git config --global user.email lzcamargo@outlook.com
+
+#------- Editor no Git
+#git config --global core.editor emacs
+
+#------ Listar a configuracao no momento
+git config --list
+
+#---- iniciando com o Git em repositorio existente
+git init
+
+#----- commit inicial
+git commit -m "commit inicial"
+
+----- adicionando arquivos que se queira monitorar
+git add *.js
+
+#------ clonando um repositorio
+#selecione o diretorio que recebera os arquivos do repositorio remoto e 
+#apartir desse diretorio execute o seguite comando git clone e o endereco 
+#do repositorio remoto. Por exemplo:
+
+git clone https://github.com/lzcamargo/GCSoftware 
+
+#Se for um repositorio privado e necessario informar usuario e senha 
+#para executar a clonagem. Se for de um repositorio publico nao sera pedido senha
