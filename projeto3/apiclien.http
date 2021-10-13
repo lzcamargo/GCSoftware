@@ -1,0 +1,41 @@
+GET http://localhost:3000/estudante HTTP/1.1
+Content-Type: application/json
+
+
+###
+
+GET http://localhost:3000/estudante/1 HTTP/1.1
+Content-Type: application/json
+
+###
+
+GET http://localhost:3000/estudante/search/João
+Content-Type: application/json
+
+###
+
+POST  http://localhost:3000/estudante HTTP/1.1
+Content-Type: application/json
+
+{
+  "matricula_estudante": 2,
+  "nome_estudante": "José API",
+  "email_estudante": "ja@server.com"
+}
+
+###
+
+PUT  http://localhost:3000/estudante/2  HTTP/1.1
+Content-Type: application/json
+
+{
+  "nome_estudante": "José API2",
+  "email_estudante": "ja@server.com"
+}
+
+###
+
+DELETE http://localhost:3000/estudante/2 HTTP/1.1
+Content-Type: application/json 
+
+###
